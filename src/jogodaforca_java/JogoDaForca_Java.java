@@ -20,12 +20,12 @@ public class JogoDaForca_Java {
 
         Random random = new Random();
         String forca = "  +---+\n" +
-                "  |   |\n" +
-                "      |\n" +
-                "      |\n" +
-                "      |\n" +
-                "      |\n" +
-                "=========";
+                       "  |   |\n" +
+                       "      |\n" +
+                       "      |\n" +
+                       "      |\n" +
+                       "      |\n" +
+                       "=========";
 
         int indice = random.nextInt(palavra.length);
         String palavraSorteada = palavra[indice];
@@ -69,20 +69,11 @@ public class JogoDaForca_Java {
                             "      |\n" +
                             "=========");
                     System.out.println(forca);
-                } else if (tentativas == 2) {
-                    forca = ("  +---+\n" +
-                            "  |   |\n" +
-                            "  O   |\n" +
-                            " /|   |\n" +
-                            "      |\n" +
-                            "      |\n" +
-                            "=========");
-                    System.out.println(forca);
                 } else if (tentativas == 3) {
                     forca = ("  +---+\n" +
                             "  |   |\n" +
                             "  O   |\n" +
-                            " /|\\  |\n" +
+                            " /|   |\n" +
                             "      |\n" +
                             "      |\n" +
                             "=========");
@@ -92,11 +83,20 @@ public class JogoDaForca_Java {
                             "  |   |\n" +
                             "  O   |\n" +
                             " /|\\  |\n" +
-                            " /    |\n" +
+                            "      |\n" +
                             "      |\n" +
                             "=========");
                     System.out.println(forca);
                 } else if (tentativas == 5) {
+                    forca = ("  +---+\n" +
+                            "  |   |\n" +
+                            "  O   |\n" +
+                            " /|\\  |\n" +
+                            " /    |\n" +
+                            "      |\n" +
+                            "=========");
+                    System.out.println(forca);
+                } else if (tentativas == 6) {
                     forca = ("  +---+\n" +
                             "  |   |\n" +
                             "  O   |\n" +
